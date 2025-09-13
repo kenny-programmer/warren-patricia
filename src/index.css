@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
 All colors MUST be HSL.
 */
 
@@ -212,46 +212,47 @@ All colors MUST be HSL.
       font-size: 2.5rem !important;
       line-height: 1.2;
     }
-    
+
     .wedding-date {
       font-size: 1.25rem !important;
     }
-    
+
     .wedding-subtitle {
       font-size: 0.95rem !important;
       line-height: 1.5;
       padding: 0 1rem;
     }
-    
+
     .wedding-script {
-      font-size: 1.1rem !important;
+      /* Allow inline or component-provided sizing to take effect on mobile */
+      font-size: inherit;
     }
-    
+
     /* Mobile spacing adjustments */
     .container {
       padding-left: 1rem;
       padding-right: 1rem;
     }
-    
+
     /* Mobile navigation improvements */
     nav {
       padding: 0.75rem 1rem;
     }
-    
+
     /* Mobile card spacing */
     .wedding-card {
       margin: 0.5rem 0;
     }
-    
+
     /* Mobile text improvements */
     h2 {
       font-size: 2rem !important;
     }
-    
+
     h3 {
       font-size: 1.5rem !important;
     }
-    
+
     /* Mobile button improvements */
     button {
       padding: 0.75rem 1.5rem;
@@ -264,15 +265,15 @@ All colors MUST be HSL.
     .wedding-title {
       font-size: 2rem !important;
     }
-    
+
     .wedding-date {
       font-size: 1.1rem !important;
     }
-    
+
     .wedding-subtitle {
       font-size: 0.9rem !important;
     }
-    
+
     h2 {
       font-size: 1.75rem !important;
     }

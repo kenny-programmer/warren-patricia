@@ -19,6 +19,8 @@ export default {
 		},
 		extend: {
 			colors: {
+				'wedding-primary': '#b91c1c',
+        'wedding-primary-dark': '#991b1b',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
