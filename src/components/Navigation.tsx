@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Link, Menu, X } from 'lucide-react';
-import { useNavigate } from 'react-router-dom'; // Add this import
+import { Menu, X } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const navigate = useNavigate(); // Add this
+  const navigate = useNavigate();
 
+  // Effect to handle background change on scroll
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -17,8 +18,8 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  type NavItem = { label: string; href: string };
-  const navItems: NavItem[] = [
+  // Define navigation items
+  const navItems = [
     { label: 'Home', href: '#home' },
     { label: 'Our Story', href: '#story' },
     { label: 'Venue', href: '#ceremony' },
@@ -29,16 +30,24 @@ const Navigation = () => {
     { label: 'Admin', href: '/admin' }
   ];
 
+  /**
+   * Handles clicks on navigation items.
+   * Scrolls to section if href starts with '#'.
+   * Navigates to a new route for other links (e.g., '/admin').
+   */
   const handleNavClick = (href: string) => {
+    // Close mobile menu on any click
+    setIsOpen(false);
+
     if (href.startsWith("#")) {
+      // Logic for same-page anchor links
       const element = document.querySelector(href);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
-      setIsOpen(false);
     } else {
+      // Logic for routing to a different page
       navigate(href);
-      setIsOpen(false);
     }
   };
 
@@ -48,6 +57,7 @@ const Navigation = () => {
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
+          {/* Logo / Initials */}
           <div className="font-serif text-xl font-bold text-primary">
             W & P
           </div>
@@ -66,25 +76,27 @@ const Navigation = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="sm"
-            className="md:hidden"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-          </Button>
+          <div className="md:hidden">
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label="Toggle navigation menu"
+            >
+              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </Button>
+          </div>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Navigation Menu */}
         {isOpen && (
-          <div className="md:hidden wedding-card mt-2 mb-4 p-4">
-            <div className="space-y-3">
+          <div className="md:hidden pb-4">
+            <div className="flex flex-col space-y-2 bg-background/95 p-4 rounded-lg shadow-lg">
               {navItems.map((item) => (
                 <button
                   key={item.href}
                   onClick={() => handleNavClick(item.href)}
-                  className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium py-2"
+                  className="block w-full text-left font-serif text-foreground hover:text-primary transition-colors py-2 text-lg"
                 >
                   {item.label}
                 </button>

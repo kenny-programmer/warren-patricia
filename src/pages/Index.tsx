@@ -46,7 +46,7 @@ const Index = () => {
         </div>
       </ParallaxSection>
 
-      {/* Our Story Section - Improved Design */}
+      {/* Our Story Section */}
       <section id="story" className="py-20 bg-gradient-to-br from-rose-50 via-white to-amber-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
@@ -65,10 +65,7 @@ const Index = () => {
           <div className="max-w-7xl mx-auto">
             {/* Timeline Design */}
             <div className="relative">
-              {/* Central Timeline Line */}
               <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-rose-200 via-pink-300 to-amber-200 h-full hidden lg:block"></div>
-
-              {/* Timeline Items */}
               <div className="space-y-16 lg:space-y-24">
 
                 {/* 1. The Christmas Party */}
@@ -89,10 +86,7 @@ const Index = () => {
                       </p>
                     </div>
                   </div>
-
-                  {/* Timeline dot */}
                   <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-rose-400 rounded-full border-4 border-white shadow-lg z-10"></div>
-
                   <div className="lg:w-1/2 lg:pl-12">
                     <div className="rounded-2xl overflow-hidden shadow-xl">
                       <img src="/image2.jpg" alt="Christmas Party" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
@@ -118,9 +112,7 @@ const Index = () => {
                       </p>
                     </div>
                   </div>
-
                   <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-blue-400 rounded-full border-4 border-white shadow-lg z-10"></div>
-
                   <div className="lg:w-1/2 lg:pr-12">
                     <div className="rounded-2xl overflow-hidden shadow-xl">
                       <img src="/coupleMain.jpg" alt="First Connection" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
@@ -146,9 +138,7 @@ const Index = () => {
                       </p>
                     </div>
                   </div>
-
                   <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-green-400 rounded-full border-4 border-white shadow-lg z-10"></div>
-
                   <div className="lg:w-1/2 lg:pl-12">
                     <div className="rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-green-50 to-emerald-50 p-8 flex items-center justify-center">
                       <div className="text-center">
@@ -178,9 +168,7 @@ const Index = () => {
                       </p>
                     </div>
                   </div>
-
                   <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-orange-400 rounded-full border-4 border-white shadow-lg z-10"></div>
-
                   <div className="lg:w-1/2 lg:pr-12">
                     <div className="rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-orange-50 to-red-50 p-8 flex items-center justify-center">
                       <div className="text-center">
@@ -210,9 +198,7 @@ const Index = () => {
                       </p>
                     </div>
                   </div>
-
                   <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-purple-400 rounded-full border-4 border-white shadow-lg z-10"></div>
-
                   <div className="lg:w-1/2 lg:pl-12">
                     <div className="rounded-2xl overflow-hidden shadow-xl">
                       <img src="/image3.jpg" alt="Together" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
@@ -238,9 +224,7 @@ const Index = () => {
                       </p>
                     </div>
                   </div>
-
                   <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-amber-400 rounded-full border-4 border-white shadow-lg z-10"></div>
-
                   <div className="lg:w-1/2 lg:pr-12">
                     <div className="rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-amber-50 to-yellow-50 p-8 flex items-center justify-center">
                       <div className="text-center">

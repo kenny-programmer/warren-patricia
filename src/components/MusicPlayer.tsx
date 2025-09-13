@@ -224,43 +224,50 @@ const MusicPlayer = () => {
       </div>
       {gateActive && (
         <button
-        className="fixed inset-0 z-[60] overflow-hidden"
-        onClick={handleUnlockAndPlay}
-        onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleUnlockAndPlay(); }}
-        aria-label="Click to view invitation"
-      >
-        {/* Sliding panels */}
-        <div className="absolute inset-0 flex pointer-events-none">
-          <div
-            className={`w-1/2 h-full bg-white/80 backdrop-blur-sm border-r border-white/40 transform transition-transform duration-700 ease-out ${gateAnimating ? '-translate-x-full' : 'translate-x-0'} origin-left`}
-          />
-          <div
-            className={`w-1/2 h-full bg-white/80 backdrop-blur-sm border-l border-white/40 transform transition-transform duration-700 ease-out ${gateAnimating ? 'translate-x-full' : 'translate-x-0'} origin-right`}
-          />
-        </div>
+  className="fixed inset-0 z-[60] overflow-hidden"
+  onClick={handleUnlockAndPlay}
+  onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleUnlockAndPlay(); }}
+  aria-label="Click to view invitation"
+>
+  {/* Import Google Font */}
+  <style>
+    {`@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');`}
+  </style>
 
-        {/* Center title - Properly sized for card */}
-        <div className="absolute inset-0 flex items-center justify-center p-4 sm:p-6 md:p-8">
-          <span
-            className={
-              `wedding-script inline-block w-full text-center leading-tight ` +
-              `px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-6 lg:px-10 lg:py-8 ` +
-              `rounded-lg sm:rounded-xl md:rounded-2xl bg-white/70 border border-white/40 ` +
-              `backdrop-blur-md shadow-lg ring-1 ring-white/20 ` +
-              `transition-opacity duration-500 ${gateAnimating ? 'opacity-0' : 'opacity-100'} ` +
-              `bg-clip-text text-transparent bg-gradient-to-r from-[#7a0a0a] via-[#a1122b] to-[#c58a12] ` +
-              `drop-shadow-[0_2px_6px_rgba(0,0,0,0.25)] ` +
-              `max-w-[95%] mx-auto`
-            }
-            style={{
-              fontSize: 'clamp(1.5rem, 8vw, 4rem)',
-              lineHeight: '1.1'
-            }}
-          >
-            Click to View Invitation
-          </span>
-        </div>
-      </button>
+  {/* Sliding panels */}
+  <div className="absolute inset-0 flex pointer-events-none">
+    <div
+      className={`w-1/2 h-full bg-white/80 backdrop-blur-sm border-r border-white/40 transform transition-transform duration-700 ease-out ${gateAnimating ? '-translate-x-full' : 'translate-x-0'} origin-left`}
+    />
+    <div
+      className={`w-1/2 h-full bg-white/80 backdrop-blur-sm border-l border-white/40 transform transition-transform duration-700 ease-out ${gateAnimating ? 'translate-x-full' : 'translate-x-0'} origin-right`}
+    />
+  </div>
+
+  {/* Center title - Real cursive font */}
+  <div className="absolute inset-0 flex items-center justify-center p-4 sm:p-6 md:p-8">
+    <span
+      className={
+        `inline-block w-full text-center leading-tight ` +
+        `px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-6 lg:px-10 lg:py-8 ` +
+        `rounded-lg sm:rounded-xl md:rounded-2xl bg-white/70 border border-white/40 ` +
+        `backdrop-blur-md shadow-lg ring-1 ring-white/20 ` +
+        `transition-opacity duration-500 ${gateAnimating ? 'opacity-0' : 'opacity-100'} ` +
+        `max-w-[95%] mx-auto`
+      }
+      style={{
+        fontSize: 'clamp(1.5rem, 8vw, 4rem)',
+        lineHeight: '1.2',
+        fontFamily: 'Dancing Script, cursive',
+        fontWeight: '400',
+        color: '#7a0a0a',
+        textShadow: '2px 2px 4px rgba(0,0,0,0.3)'
+      }}
+    >
+      Click to View Invitation
+    </span>
+  </div>
+</button>
       )}
       {/* No overlay; slider only appears when its icon is clicked */}
     </div>
