@@ -89,7 +89,7 @@ const Index = () => {
                   <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-rose-400 rounded-full border-4 border-white shadow-lg z-10"></div>
                   <div className="lg:w-1/2 lg:pl-12">
                     <div className="rounded-2xl overflow-hidden shadow-xl">
-                      <img src="/image2.jpg" alt="Christmas Party" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
+                      <img src="/img1.jpg" alt="Christmas Party" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
                     </div>
                   </div>
                 </div>
@@ -115,7 +115,7 @@ const Index = () => {
                   <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-blue-400 rounded-full border-4 border-white shadow-lg z-10"></div>
                   <div className="lg:w-1/2 lg:pr-12">
                     <div className="rounded-2xl overflow-hidden shadow-xl">
-                      <img src="/coupleMain.jpg" alt="First Connection" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
+                      <img src="/img2.jpg" alt="First Connection" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
                     </div>
                   </div>
                 </div>
@@ -138,14 +138,10 @@ const Index = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-green-400 rounded-full border-4 border-white shadow-lg z-10"></div>
-                  <div className="lg:w-1/2 lg:pl-12">
-                    <div className="rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-green-50 to-emerald-50 p-8 flex items-center justify-center">
-                      <div className="text-center">
-                        <Bike className="w-16 h-16 text-green-500 mx-auto mb-4" />
-                        <p className="text-green-700 font-medium">First Adventure Together</p>
-                        <p className="text-sm text-green-600 mt-2">Nasugbu, Batangas</p>
-                      </div>
+                  <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-blue-400 rounded-full border-4 border-white shadow-lg z-10"></div>
+                  <div className="lg:w-1/2 lg:pr-12">
+                    <div className="rounded-2xl overflow-hidden shadow-xl">
+                      <img src="/img3.jpg" alt="First Connection" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
                     </div>
                   </div>
                 </div>
@@ -168,14 +164,10 @@ const Index = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-orange-400 rounded-full border-4 border-white shadow-lg z-10"></div>
-                  <div className="lg:w-1/2 lg:pr-12">
-                    <div className="rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-orange-50 to-red-50 p-8 flex items-center justify-center">
-                      <div className="text-center">
-                        <Sunrise className="w-16 h-16 text-orange-500 mx-auto mb-4" />
-                        <p className="text-orange-700 font-medium">Sunrise & Love Confession</p>
-                        <p className="text-sm text-orange-600 mt-2">Monte Maria & Calatagan</p>
-                      </div>
+                  <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-purple-400 rounded-full border-4 border-white shadow-lg z-10"></div>
+                  <div className="lg:w-1/2 lg:pl-12">
+                    <div className="rounded-2xl overflow-hidden shadow-xl">
+                      <img src="/img4.jpg" alt="Together" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
                     </div>
                   </div>
                 </div>
@@ -189,7 +181,7 @@ const Index = () => {
                           <CheckCircle className="w-7 h-7 text-white" />
                         </div>
                         <div>
-                          <h3 className="text-xl font-bold text-primary">February 11, 2020</h3>
+                          <h3 className="text-xl font-bold text-primary">February 10, 2020</h3>
                           <p className="text-purple-600 font-medium">Saying Yes</p>
                         </div>
                       </div>
@@ -201,37 +193,7 @@ const Index = () => {
                   <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-purple-400 rounded-full border-4 border-white shadow-lg z-10"></div>
                   <div className="lg:w-1/2 lg:pl-12">
                     <div className="rounded-2xl overflow-hidden shadow-xl">
-                      <img src="/image3.jpg" alt="Together" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
-                    </div>
-                  </div>
-                </div>
-
-                {/* 6. Through Trials */}
-                <div className="relative flex flex-col lg:flex-row-reverse items-center">
-                  <div className="lg:w-1/2 lg:pl-12 mb-8 lg:mb-0">
-                    <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 border border-amber-100">
-                      <div className="flex items-center gap-4 mb-4">
-                        <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-amber-400 to-yellow-500 rounded-full flex items-center justify-center shadow-lg">
-                          <ShieldCheck className="w-7 h-7 text-white" />
-                        </div>
-                        <div>
-                          <h3 className="text-xl font-bold text-primary">Stronger Together</h3>
-                          <p className="text-amber-600 font-medium">Love Conquers All</p>
-                        </div>
-                      </div>
-                      <p className="text-muted-foreground leading-relaxed">
-                        They faced family, dreams, loss, and faith-testing moments. Through it all, they never gave up—what began with a fan and a dance became a love built to last.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-amber-400 rounded-full border-4 border-white shadow-lg z-10"></div>
-                  <div className="lg:w-1/2 lg:pr-12">
-                    <div className="rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-amber-50 to-yellow-50 p-8 flex items-center justify-center">
-                      <div className="text-center">
-                        <ShieldCheck className="w-16 h-16 text-amber-500 mx-auto mb-4" />
-                        <p className="text-amber-700 font-medium">Through Every Storm</p>
-                        <p className="text-sm text-amber-600 mt-2">Unbreakable Bond</p>
-                      </div>
+                      <img src="/proposal.jpg" alt="Together" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
                     </div>
                   </div>
                 </div>
@@ -239,25 +201,18 @@ const Index = () => {
             </div>
 
             {/* The Proposal - Special Highlight */}
-     <div className="max-w-4xl mx-auto">
-                  {/* Image Section */}
-                  <div className="mb-8">
-                    <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-                      <img
-                        src="/proposal.jpg"
-                        alt="Warren's proposal to Patricia on February 10, 2024"
-                        className="w-full h-[400px] md:h-[500px] object-cover"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                      <div className="absolute bottom-4 left-4 right-4">
-                        <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4">
-                          <p className="text-rose-600 font-medium text-center">February 10, 2024</p>
-                          <p className="text-sm text-rose-500 text-center">Forever Starts Here</p>
-                        </div>
-                      </div>
-                    </div>
+            <div className="mt-24 relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-rose-100 via-pink-50 to-purple-100 rounded-3xl transform rotate-1"></div>
+              <div className="relative bg-white rounded-3xl shadow-2xl p-12 border-2 border-rose-200">
+                <div className="text-center mb-8">
+                  <div className="inline-block p-4 bg-gradient-to-br from-rose-400 to-pink-500 rounded-full shadow-lg mb-4">
+                    <Heart className="w-10 h-10 text-white" />
                   </div>
+                  <h3 className="text-3xl md:text-4xl font-serif text-primary mb-2">The Proposal</h3>
+                  <div className="w-24 h-1 bg-gradient-to-r from-rose-400 to-pink-400 rounded-full mx-auto"></div>
+                </div>
 
+                <div className="max-w-4xl mx-auto">
                   <div className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-2xl p-8 border border-rose-200">
                     <p className="text-lg text-muted-foreground leading-relaxed text-center italic">
                       "On February 10, 2024—the day before their 4th anniversary—Warren planned a moment that would forever change their story. With family present, he asked Patricia the most sincere question of his life. In that sacred moment, Patricia gave her sweetest 'Yes'—a word she never imagined would belong to anyone else but him, the man God had destined for her."
@@ -267,9 +222,13 @@ const Index = () => {
                       <div className="inline-block bg-white rounded-full p-6 shadow-lg">
                         <div className="text-4xl">💍</div>
                       </div>
+                      <p className="text-rose-600 font-medium mt-4">February 10, 2024</p>
+                      <p className="text-sm text-rose-500">Forever Starts Here</p>
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
