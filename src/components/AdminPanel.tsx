@@ -67,7 +67,7 @@ const RSVPList: React.FC<{
               )}
               {rsvp.specialrequirements && (
                 <div>
-                  <p className="text-sm text-gray-500">Special Requirements</p>
+                  <p className="text-sm text-gray-500">Message to the Couple</p>
                   <p className="font-medium">{rsvp.specialrequirements}</p>
                 </div>
               )}

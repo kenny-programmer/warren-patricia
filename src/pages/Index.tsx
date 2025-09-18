@@ -239,18 +239,25 @@ const Index = () => {
             </div>
 
             {/* The Proposal - Special Highlight */}
-            <div className="mt-24 relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-rose-100 via-pink-50 to-purple-100 rounded-3xl transform rotate-1"></div>
-              <div className="relative bg-white rounded-3xl shadow-2xl p-12 border-2 border-rose-200">
-                <div className="text-center mb-8">
-                  <div className="inline-block p-4 bg-gradient-to-br from-rose-400 to-pink-500 rounded-full shadow-lg mb-4">
-                    <Heart className="w-10 h-10 text-white" />
+     <div className="max-w-4xl mx-auto">
+                  {/* Image Section */}
+                  <div className="mb-8">
+                    <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+                      <img
+                        src="/proposal.jpg"
+                        alt="Warren's proposal to Patricia on February 10, 2024"
+                        className="w-full h-[400px] md:h-[500px] object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                      <div className="absolute bottom-4 left-4 right-4">
+                        <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4">
+                          <p className="text-rose-600 font-medium text-center">February 10, 2024</p>
+                          <p className="text-sm text-rose-500 text-center">Forever Starts Here</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <h3 className="text-3xl md:text-4xl font-serif text-primary mb-2">The Proposal</h3>
-                  <div className="w-24 h-1 bg-gradient-to-r from-rose-400 to-pink-400 rounded-full mx-auto"></div>
-                </div>
 
-                <div className="max-w-4xl mx-auto">
                   <div className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-2xl p-8 border border-rose-200">
                     <p className="text-lg text-muted-foreground leading-relaxed text-center italic">
                       "On February 10, 2024—the day before their 4th anniversary—Warren planned a moment that would forever change their story. With family present, he asked Patricia the most sincere question of his life. In that sacred moment, Patricia gave her sweetest 'Yes'—a word she never imagined would belong to anyone else but him, the man God had destined for her."
@@ -260,13 +267,9 @@ const Index = () => {
                       <div className="inline-block bg-white rounded-full p-6 shadow-lg">
                         <div className="text-4xl">💍</div>
                       </div>
-                      <p className="text-rose-600 font-medium mt-4">February 10, 2024</p>
-                      <p className="text-sm text-rose-500">Forever Starts Here</p>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>

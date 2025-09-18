@@ -19,17 +19,12 @@ const PhotoGallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const photos = [
-    { src: coupleMain, alt: "Warren & Patricia together" },
-    { src: earlyDating, alt: "Early dating memories" },
-    { src: engagement, alt: "Our engagement" },
-    { src: gallery1, alt: "Memory 1" },
-    { src: gallery2, alt: "Memory 2" },
-    { src: gallery3, alt: "Memory 3" },
-    { src: gallery4, alt: "Memory 4" },
-    { src: gallery5, alt: "Memory 5" },
-    { src: gallery6, alt: "Memory 6" },
-    { src: gallery7, alt: "Memory 7" },
-    { src: gallery8, alt: "Memory 8" }
+    { src: "/img2.jpg", alt: "Warren & Patricia together" },
+    { src: "/img3.jpg", alt: "Early dating memories" },
+    { src: "/img4.jpg", alt: "Our engagement" },
+    { src: "/img1.jpg", alt: "Memory 1" },
+    { src: "/image2.jpg", alt: "Memory 2" },
+    { src: "/proposal.jpg", alt: "Memory 4" },
   ];
 
   const openGallery = (index: number) => {
@@ -49,13 +44,13 @@ const PhotoGallery = () => {
     <>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
         {photos.slice(0, 8).map((photo, index) => (
-          <div 
-            key={index} 
+          <div
+            key={index}
             className="wedding-card overflow-hidden group cursor-pointer"
             onClick={() => openGallery(index)}
           >
-            <img 
-              src={photo.src} 
+            <img
+              src={photo.src}
               alt={photo.alt}
               className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
             />
@@ -74,7 +69,7 @@ const PhotoGallery = () => {
             >
               <X className="h-6 w-6" />
             </Button>
-            
+
             <Button
               variant="ghost"
               size="icon"
@@ -83,7 +78,7 @@ const PhotoGallery = () => {
             >
               <ChevronLeft className="h-8 w-8" />
             </Button>
-            
+
             <Button
               variant="ghost"
               size="icon"
@@ -92,13 +87,13 @@ const PhotoGallery = () => {
             >
               <ChevronRight className="h-8 w-8" />
             </Button>
-            
+
             <img
               src={photos[currentIndex].src}
               alt={photos[currentIndex].alt}
               className="w-full max-h-[80vh] object-contain"
             />
-            
+
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-sm">
               {currentIndex + 1} of {photos.length}
             </div>
