@@ -357,8 +357,8 @@ const Index = () => {
       <section id="photos" className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif text-primary mb-4">Our Memories</h2>
-            <p className="text-xl text-muted-foreground">A glimpse into our journey together</p>
+            <h2 className="text-4xl md:text-5xl font-serif text-primary mb-4">Our Prenuptial Photos</h2>
+            <p className="text-xl text-muted-foreground">A glimpse into our prenup photoshoot</p>
           </div>
 
           <PhotoGallery />
