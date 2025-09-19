@@ -134,7 +134,7 @@ const Index = () => {
                         </div>
                       </div>
                       <p className="text-muted-foreground leading-relaxed">
-                        Their first ride together to Nasugbu washed away Patricia's worries. It marked the joyful start of their journey together.
+                        Warren and Patricia’s first ride together was to Nasugbu. She was supposed to backride with a male friend, but Warren secretly persuaded him to let her ride with him instead—and she did. With the wind on her face and the sun on her skin, Patricia&apos;s worries melted away.
                       </p>
                     </div>
                   </div>
@@ -160,7 +160,7 @@ const Index = () => {
                         </div>
                       </div>
                       <p className="text-muted-foreground leading-relaxed">
-                        On Warren's birthday, they watched the sunrise over coffee. Days later, after a ride to Monte Maria and Calatagan, Warren confessed his love.
+                        Just days later, on Warren&apos;s birthday—January 4—he invited Patricia out. On her last day at work, they shared 5-peso coffee while watching the sunrise. By January 12, they joined his motorcycle group to visit an orphanage, then rode to Monte Maria and the beaches of Calatagan. That same day, as Taal Volcano erupted and the skies turned dark, Warren brought Patricia home safely before making the long ride back alone. That night, he confessed his love.
                       </p>
                     </div>
                   </div>
@@ -216,7 +216,7 @@ const Index = () => {
                 <div className="max-w-4xl mx-auto">
                   <div className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-2xl p-8 border border-rose-200">
                     <p className="text-lg text-muted-foreground leading-relaxed text-center italic">
-                      "On February 10, 2024—the day before their 4th anniversary—Warren planned a moment that would forever change their story. With family present, he asked Patricia the most sincere question of his life. In that sacred moment, Patricia gave her sweetest 'Yes'—a word she never imagined would belong to anyone else but him, the man God had destined for her."
+                      "On February 10, 2024—a day before their 4th anniversary—Warren created a moment that would forever change their story. With family present, he asked Patricia the most heartfelt question of his life. In that sacred moment, she gave her sweetest 'yes'—a promise she knew would belong only to him, the man God had destined for her"
                     </p>
 
                     <div className="text-center mt-8">
