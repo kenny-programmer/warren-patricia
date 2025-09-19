@@ -202,29 +202,43 @@ const Index = () => {
             </div>
 
             {/* The Proposal - Special Highlight */}
-            <div className="mt-24 relative">
+            <div className="mt-16 md:mt-24 relative">
               <div className="absolute inset-0 bg-gradient-to-r from-rose-100 via-pink-50 to-purple-100 rounded-3xl transform rotate-1"></div>
-              <div className="relative bg-white rounded-3xl shadow-2xl p-12 border-2 border-rose-200">
-                <div className="text-center mb-8">
-                  <div className="inline-block p-4 bg-gradient-to-br from-rose-400 to-pink-500 rounded-full shadow-lg mb-4">
-                    <Heart className="w-10 h-10 text-white" />
+              <div className="relative bg-white rounded-3xl shadow-2xl p-6 md:p-12 border-2 border-rose-200">
+                <div className="text-center mb-6 md:mb-8">
+                  <div className="inline-block p-3 md:p-4 bg-gradient-to-br from-rose-400 to-pink-500 rounded-full shadow-lg mb-4">
+                    <Heart className="w-8 h-8 md:w-10 md:h-10 text-white" />
                   </div>
-                  <h3 className="text-3xl md:text-4xl font-serif text-primary mb-2">The Proposal</h3>
-                  <div className="w-24 h-1 bg-gradient-to-r from-rose-400 to-pink-400 rounded-full mx-auto"></div>
+                  <h3 className="text-2xl md:text-3xl lg:text-4xl font-serif text-primary mb-2">The Proposal</h3>
+                  <div className="w-16 md:w-24 h-1 bg-gradient-to-r from-rose-400 to-pink-400 rounded-full mx-auto"></div>
                 </div>
 
                 <div className="max-w-4xl mx-auto">
-                  <div className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-2xl p-8 border border-rose-200">
-                    <p className="text-lg text-muted-foreground leading-relaxed text-center italic">
+                  {/* Image Container - Mobile First */}
+                  <div className="mb-6 md:mb-8">
+                    <div className="relative overflow-hidden rounded-2xl shadow-lg">
+                      <img
+                        src="/proposal.jpg"
+                        alt="Warren and Patricia's proposal moment on February 10, 2024"
+                        className="w-full h-64 sm:h-80 md:h-96 lg:h-[500px] object-cover"
+                      />
+                      {/* Subtle overlay for cohesion */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-2xl"></div>
+                    </div>
+                  </div>
+
+                  {/* Text Content */}
+                  <div className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-2xl p-6 md:p-8 border border-rose-200">
+                    <p className="text-base md:text-lg text-muted-foreground leading-relaxed text-center italic">
                       "On February 10, 2024—a day before their 4th anniversary—Warren created a moment that would forever change their story. With family present, he asked Patricia the most heartfelt question of his life. In that sacred moment, she gave her sweetest 'yes'—a promise she knew would belong only to him, the man God had destined for her"
                     </p>
 
-                    <div className="text-center mt-8">
-                      <div className="inline-block bg-white rounded-full p-6 shadow-lg">
-                        <div className="text-4xl">💍</div>
+                    <div className="text-center mt-6 md:mt-8">
+                      <div className="inline-block bg-white rounded-full p-4 md:p-6 shadow-lg">
+                        <div className="text-3xl md:text-4xl">💍</div>
                       </div>
-                      <p className="text-rose-600 font-medium mt-4">February 10, 2024</p>
-                      <p className="text-sm text-rose-500">Forever Starts Here</p>
+                      <p className="text-rose-600 font-medium mt-3 md:mt-4 text-base md:text-lg">February 10, 2024</p>
+                      <p className="text-sm md:text-base text-rose-500">Forever Starts Here</p>
                     </div>
                   </div>
                 </div>
