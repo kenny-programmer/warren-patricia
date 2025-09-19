@@ -361,13 +361,6 @@ const Index = () => {
           </div>
 
           <PhotoGallery />
-
-          <div className="text-center mt-12">
-            <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-              <Camera className="w-4 h-4 mr-2" />
-              More photos coming soon!
-            </Button>
-          </div>
         </div>
       </section>
 
@@ -408,9 +401,51 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center">
           <h3 className="text-3xl font-serif mb-4">Warren & Patricia</h3>
           <p className="text-lg mb-6">October 4, 2025</p>
-          <p className="text-sm opacity-75">
+          <p className="text-sm opacity-75 mb-8">
             We can't wait to celebrate with you! ❤️
           </p>
+
+          {/* Developer Watermark */}
+          <div className="border-t border-white/20 pt-8 mt-8">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 max-w-md mx-auto">
+              <p className="text-xs text-white/80 mb-3">
+                Website & RSVP System Created by
+              </p>
+              <h4 className="text-sm font-semibold text-white mb-3">Victor Roxas</h4>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-xs">
+                <a
+                  href="https://victorroxas.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-white/90 hover:text-white transition-colors underline underline-offset-2"
+                >
+                  <span className="text-sm">💻</span>
+                  Portfolio
+                </a>
+                <span className="hidden sm:inline text-white/60">•</span>
+                <a
+                  href="https://www.facebook.com/vicqttt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-white/90 hover:text-white transition-colors underline underline-offset-2"
+                >
+                  <span className="text-sm">📘</span>
+                  Facebook
+                </a>
+                <span className="hidden sm:inline text-white/60">•</span>
+                <a
+                  href="mailto:vctrrxs@gmail.com"
+                  className="flex items-center gap-2 text-white/90 hover:text-white transition-colors underline underline-offset-2"
+                >
+                  <span className="text-sm">✉️</span>
+                  Email
+                </a>
+              </div>
+              <p className="text-xs text-white/70 mt-3">
+                Need a custom wedding website? Contact me!
+              </p>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
