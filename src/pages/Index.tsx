@@ -181,19 +181,20 @@ const Index = () => {
                           <CheckCircle className="w-7 h-7 text-white" />
                         </div>
                         <div>
-                          <h3 className="text-xl font-bold text-primary">February 10, 2020</h3>
+                          <h3 className="text-xl font-bold text-primary">February 11, 2020</h3>
                           <p className="text-purple-600 font-medium">Saying Yes</p>
                         </div>
                       </div>
                       <p className="text-muted-foreground leading-relaxed">
-                        Patricia said "Yes." Even as the world locked down, their love grew stronger through distance and trials.
+                        Warren saw the darkness in her, yet loved her as if she were the sun. In that love, Patricia&apos;s heart was captured, and she finally embraced her true feelings, choosing to accept Warren’s love and promise. From then on, he vowed to bring her happiness and show her a world that was brighter and more meaningful with him by her side.
+
                       </p>
                     </div>
                   </div>
                   <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-purple-400 rounded-full border-4 border-white shadow-lg z-10"></div>
                   <div className="lg:w-1/2 lg:pl-12">
                     <div className="rounded-2xl overflow-hidden shadow-xl">
-                      <img src="/proposal.jpg" alt="Together" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
+                      <img src="/jabe.jpg" alt="Together" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
                     </div>
                   </div>
                 </div>
@@ -451,5 +452,7 @@ const Index = () => {
     </div>
   );
 };
+
+
 
 export default Index;
